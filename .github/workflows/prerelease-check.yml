@@ -24,9 +24,9 @@ on:
 
 jobs:
   pre_release:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.inputs.branch }}
       - name: industrial_ci
